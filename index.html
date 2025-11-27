@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Intro Form</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <h2>📝 INTRO FROM  ✨</h2>
+        <form id="proForm" class="form">
+
+            <div class="form-group">
+                <label for="name"> 🖋️ Name <span class="required">*</span></label>
+                <input type="text" id="name" placeholder="Enter your full name ! " required>
+            </div>
+            
+            <div class="form-group">
+                <label for="discord_id">🤖 Discord User ID <span class="required">*</span></label>
+                <input type="text" id="discord_id" placeholder="Like: 123456789012345678" required>
+            </div>
+
+            <div class="group-row">
+                <div class="form-group third-width">
+                    <label for="age">🎂 Age</label>
+                    <input type="number" id="age" placeholder="Enter your age !" min="10" max="100">
+                </div>
+                
+                <div class="form-group third-width">
+                    <label for="gender">🚻 Gender</label>
+                    <input type="text" id="gender" placeholder="Male /Female">
+                </div>
+                
+                <div class="form-group third-width">
+                    <label for="height">📏 height</label>
+                    <input type="text" id="height" placeholder="Enter your height !">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">📍 Location</label>
+                <input type="text" id="location" placeholder="Country /City">
+            </div>
+            
+            <div class="group-row">
+                
+                <div class="form-group half-width">
+                    <label for="dm_status">✉️ DM Status</label>
+                    <input type="text" id="dm_status" placeholder="Open / Closed">
+                </div>
+                
+                <div class="form-group half-width">
+                    <label for="relationship">❤️ Relationship</label>
+                    <input type="text" id="relationship" placeholder="Single /Mingle /Married">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">🏖️ Hobbies</label>
+                <input type="text" id="hobbies" placeholder="Gaming, Coding, Music (Write with commas)">
+            </div>
+
+            <div class="form-group">
+                <label for="skill">💡 Skill <span class="required">*</span></label>
+                <input type="text" id="skill" placeholder="Singing, Editing, Gaming" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="about">📝 About</label>
+                <textarea id="about" rows="4" placeholder="Write about yourself in 2-3 lines (short)"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send to Discord</button>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
